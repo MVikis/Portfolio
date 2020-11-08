@@ -34,7 +34,7 @@ export default function Header(props){
         
           <div className="text-container">
          <h3>Hi, I'm </h3><h1>Martin Viksten</h1> <h3> and I am a</h3>
-   <h2 className="text-effect">{letter}</h2>
+   <h2 id="text-effect" className="text-style">{letter}</h2>
          </div>
          
          

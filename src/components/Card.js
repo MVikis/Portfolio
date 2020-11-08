@@ -8,14 +8,20 @@ export default function Card(props){
         Aos.init({duration:2000})
       },[])
     
-    const gridChild = `card grid-child${props.index + 1}`
+    const delay = props.aosDelay + 'ms'
     return(
-        <div data-aos={props.aosData} className={gridChild}>
-             <h2 className="card-title">{props.project.name}</h2>
+        <div data-aos-duration={delay} data-aos={props.aosData} className="card">
+            <h2 className="card-title">{props.project.name}</h2>
+            <div className="circle-buttons-container">
+        <div className="circle">
+            
+        <img src={props.project.icon}></img>
         
+        </div>
         <div className="row button-container">
         <Button Link={props.project.linkWeb} text="Website"/>
         <Button Link={props.project.linkGit} text="Github"/>
+        </div>
         </div>
     </div>
     )

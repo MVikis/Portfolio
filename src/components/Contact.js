@@ -5,7 +5,8 @@ export default function Contact(){
 
     return(
         <footer id="contact">
-            <h2>Contact me</h2>
+           
+            <h2 id="contactTitle" className="title text-style">Contact</h2>
             <div className="row">
                 
                     <div id="contact-row-column" className="row-column">
@@ -55,7 +56,7 @@ export default function Contact(){
                 </div>
                
 
-                
+              
 
           
             

@@ -1,21 +1,12 @@
-import { useEffect, useState } from "react"
+import Image from './button.png'
 
 export default function Button(props){
 
-    const [position, setPosition] = useState({x:0,y:0})
-    
-
- function OnEnter(e){
-    
-    setPosition({x:e.nativeEvent.offsetX, y:e.nativeEvent.offsetY})
-    
-    
-
-}
+  
 
 
     return(
-        <a href={props.Link} className="btn-primary" onMouseOver={OnEnter.bind(this)} >{props.text}
-        <span style={{left:`${position.x}px`,top:`${position.y}px`}}/></a>
+        <a href={props.Link}  className="btn-primary" ><span>{props.text}</span>
+        <div style={{backgroundImage: `url(${Image})`}}/></a>
     )
 }

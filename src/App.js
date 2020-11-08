@@ -9,6 +9,9 @@ import CvPage from './components/CvPage'
 import Gallery from './components/Gallery'
 import Navbar from './components/Navbar'
 import Contact from './components/Contact'
+import Neural from './neural.svg'
+import Css from './css-3.svg'
+import IconCards from './straight-poker.svg'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faProjectDiagram, faEnvelope, faUser, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
  
@@ -18,10 +21,10 @@ library.add( faHome, faProjectDiagram, faEnvelope, faUser, faMapMarkerAlt)
 
 
 function App() {
-  const projects = [{name:'Stylized Cards',linkWeb:'',linkGit:''},
-  {name:'Small Projects',linkWeb:'',linkGit:'https://github.com/MVikis/Small-Projects'},
-  {name:'Tensor',linkWeb:'https://mvikis.github.io/ML-Projects/',linkGit:'https://github.com/MVikis/ML-Projects'},
-  {name:'Card-Generator',linkWeb:'https://mvikis.github.io/Card-Generator/',linkGit:'https://github.com/MVikis/Card-Generator'}]
+  const projects = [{name:'Stylized Components',linkWeb:'',linkGit:'', icon:Css},
+  {name:'Small Projects',linkWeb:'',linkGit:'https://github.com/MVikis/Small-Projects',icon:faProjectDiagram},
+  {name:'Machine Learning',linkWeb:'https://mvikis.github.io/ML-Projects/',linkGit:'https://github.com/MVikis/ML-Projects', icon:Neural},
+  {name:'Card-Generator',linkWeb:'https://mvikis.github.io/Card-Generator/',linkGit:'https://github.com/MVikis/Card-Generator',icon:IconCards}]
  
   return (
     <div className="App">
