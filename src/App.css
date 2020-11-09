@@ -12,7 +12,9 @@ html {
   font-weight: 800;
   font-style: italic;
 }
-p{
+.cv-text{
+  font-weight: 200;
+  width: 60%;
   font-size: calc(8px + 2vmin);
 }
 .App-header {
@@ -74,6 +76,7 @@ li:hover svg{
   overflow: hidden;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  margin-bottom: 50px;
 }
 
 
@@ -161,7 +164,8 @@ border-color: var(--primary-color);
 #text-effect{
   color:var(--secondary-color);
   position: relative;
-  font-size: 7vw;
+
+  
 }
 #text-effect:after{
   content:"";
@@ -179,6 +183,7 @@ border-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .background>div{
   z-index: 2;
@@ -225,48 +230,63 @@ a{
   position: absolute;
 }
 .btn-primary{
+  z-index: 1;
   width: auto;
   height: auto;
-  font-size: calc(12px + 2vmin);
- 
-  display: inline-block;
+  font-size: calc(10px + 2vmin);
   position: relative;
   cursor: pointer;
-  min-width: 300px;
-  
+  min-width: 200px;
+  text-align: center;
+  border-radius: 25px;
   padding: 10px;
   margin: 5px;
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
 }
 .btn-primary span{
-  text-align: center;
-  color: white;
-  position: relative;
-  z-index: 2;
-  transition: all  0.5s ease;
-}
-
-.btn-primary:hover div {
-  transform-origin: left;
+  z-index: -1;
+  position: absolute;
+  background-color: var(--background-color);
+  top: 0%;
   width: 100%;
+  height: 0%;
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
+}
+.btn-primary:hover:after, .btn-primary:hover:before 
+{
+  height: 100%;
+}
+.btn-primary:after{
+  content: '';
+  background-color: var(--background-color);
+  width: 2px;
+  height: 0%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: 0.2s ease;
+
+}
+.btn-primary:before{
+  content:'';
+  background-color: var(--background-color);
+   width: 2px;
+   height: 0%;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   transition: 0.2s ease;
+}
+.btn-primary:hover{
+  letter-spacing: 1px;
+  color:var(--secondary-color);
 }
 .btn-primary:hover span{
-  color: #282c34;
-}
-.btn-primary div{
- 
-width: 0;
-  z-index: 1;
-left:0;
-top: 0;
   height: 100%;
-  transition: all 0.5s ease;
-  position: absolute;
-  background-size: cover;
-  
-  background-repeat: no-repeat;
-
-  
 }
+
 .projects{
   justify-content: center;
   flex-wrap: wrap;
@@ -354,6 +374,7 @@ align-items: center;
 }
 
 .card-title{
+  font-size: calc(20px + 2vmin);
   top:25%;
   width: 100%;
   transition: 0.5s ease-in-out;
@@ -372,9 +393,21 @@ align-items: center;
     right: 0;
     padding-bottom: 10px;
 }
+footer #contact-background{
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+footer #contact-background path{
+
+  fill:var(--secondary-color);
+  stroke: none;
+}
 footer{
+  z-index: 0;
+  background-color: var(--background-color);
   position: relative;
-  background-color: var(--secondary-color);
   font-size: calc(10px + 2vmin);
   flex-direction: column;
   display: flex;
@@ -389,6 +422,8 @@ footer> .row{
 }
 #contact-row-column .row{
   justify-content: flex-start;
+  position: relative;
+  z-index: 2;
 }
 
 .font-large{
@@ -404,6 +439,15 @@ footer> .row{
   }
 }
 @media (max-width: 425px) { 
+  .cv-text{
+    width: 95%;
+  }
+  .header, footer{
+    min-height: 90vh;
+  }
+  .background{
+    min-height: 90vh;
+  }
   .text-container{
     width: 80%;
   }

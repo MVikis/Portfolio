@@ -12,7 +12,7 @@ export default function CvPage(props){
              <img className="cv-image" src={props.cvImage} />
             <div className="row-column">
            
-        <div style={{width:'50%'}}>
+        <div className="cv-text">
         <h2 id="cvTitle" className="title text-style">About</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                  eiusmod tempor incididunt ut labore et dolore magna aliqua. 
