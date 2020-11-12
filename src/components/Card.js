@@ -19,7 +19,7 @@ export default function Card(props){
         
         </div>
         <div className="row button-container">
-        <Button Link={props.project.linkWeb} text="Website"/>
+        <Button Link={props.project.linkWeb} text="Hemsida"/>
         <Button Link={props.project.linkGit} text="Github"/>
         </div>
         </div>

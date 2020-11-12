@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 
 export default function Header(props){
-    const texts =['React Developer','C# Developer','Javascript Developer']
+    const texts =['React Utvecklare','C# Utvecklare','Javascript Utvecklare']
     const [count, setCount] =useState(0)
     const [index, setIndex] = useState(0)
     const [currentText, setText] = useState(texts[0])
@@ -33,7 +33,7 @@ export default function Header(props){
         <div id="header" className="header">
         
           <div className="text-container">
-         <h3>Hi, I'm </h3><h1>Martin Viksten</h1> <h3> and I am a</h3>
+         <h3>Hej, jag är </h3><h1>Martin Viksten</h1> <h3> och jag är en</h3>
    <h2 id="text-effect">{letter}</h2>
          </div>
          

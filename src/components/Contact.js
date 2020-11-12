@@ -10,19 +10,19 @@ export default function Contact(){
     return(
         <footer id="contact">
            
-            <h2 id="contactTitle" className="title text-style">Contact</h2>
+            <h2 id="contactTitle" className="title text-style">Kontakt</h2>
             <div className="row">
             <svg id="contact-background" viewBox="0 0 500 150" preserveAspectRatio="none" >
                 <path d="M-0.90,34.83 C0.23,152.26 535.77,25.95 286.34,312.14 L255.30,251.94 L-5.98,168.05 Z"></path></svg>
                     <div id="contact-row-column" className="row-column">
                        
-                            <h4>Get in Touch</h4>
-                            <span>If you have any questions, please do contact me!</span>
+                           
+                            <p className="cv-text">Om du är nyfiken och vill veta mer om mig och vad jag kan erbjuda ditt företag så tveka inte - släng iväg ett mejl så kan vi prata mer! </p>
                             
                                 <div data-aos-offset="50px" data-aos="fade-right" className="row">
                                     <FontAwesomeIcon icon="user"/>
                                     <div className="row-column">
-                                        <span className="font-large">Name</span>
+                                        <span className="font-large">Namn</span>
                                         <span>Martin Viksten</span>
 
                                     </div>
@@ -30,7 +30,7 @@ export default function Contact(){
                                 <div data-aos-offset="50px" data-aos="fade-right" className="row">
                                     <FontAwesomeIcon icon="map-marker-alt"/>
                                     <div className="row-column">
-                                        <span className="font-large">Address</span>
+                                        <span className="font-large">Adress</span>
                                         <span>Linköping, Sweden</span>
         
                                     </div>
