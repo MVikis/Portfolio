@@ -15,7 +15,7 @@ export default function Card(props){
             <div className="circle-buttons-container">
         <div className="circle">
             
-        <img src={props.project.icon}></img>
+        <img alt='' src={props.project.icon}></img>
         
         </div>
         <div className="row button-container">

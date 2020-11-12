@@ -1,4 +1,4 @@
-import StyleCard from './StyleCard.png'
+
 import Card from './Card'
 
 

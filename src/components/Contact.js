@@ -61,9 +61,14 @@ export default function Contact(){
                 </div>
                
 
-              
-
-          
+              <div className="credits">
+                  
+              Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>,
+                 <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>,
+                <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>  <a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a>
+                
+                </div>
+                
             
         </footer>
     )

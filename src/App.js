@@ -1,9 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import cvImage from './testCV.png'
 import testCV from './CvPix.png'
 import CV from './CV.pdf'
-import { CSSTransition } from 'react-transition-group';
 import Header from './components/Header'
 import CvPage from './components/CvPage'
 import Gallery from './components/Gallery'
@@ -22,8 +21,8 @@ library.add( faHome, faProjectDiagram, faEnvelope, faUser, faMapMarkerAlt)
 
 
 function App() {
-  const projects = [{name:'Stylized Components',linkWeb:'',linkGit:'', icon:Css},
-  {name:'Small Projects',linkWeb:'',linkGit:'https://github.com/MVikis/Small-Projects',icon:Briefing},
+  const projects = [{name:'Stylized Components',linkWeb:'https://mvikis.github.io/Stylized-React-Components/',linkGit:'https://github.com/MVikis/Stylized-React-Components', icon:Css},
+  {name:'Small Projects',linkWeb:'https://mvikis.github.io/Small-Projects/',linkGit:'https://github.com/MVikis/Small-Projects',icon:Briefing},
   {name:'Machine Learning',linkWeb:'https://mvikis.github.io/ML-Projects/',linkGit:'https://github.com/MVikis/ML-Projects', icon:Neural},
   {name:'Card-Generator',linkWeb:'https://mvikis.github.io/Card-Generator/',linkGit:'https://github.com/MVikis/Card-Generator',icon:IconCards}]
  

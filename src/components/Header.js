@@ -38,7 +38,7 @@ export default function Header(props){
          </div>
          
          
-           <img className="header-img" src={props.testCV} />
+           <img alt='header img' className="header-img" src={props.testCV} />
         
         </div>
     )
