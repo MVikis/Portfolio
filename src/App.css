@@ -452,8 +452,12 @@ right: 3px;
   }
 }
 @media (max-width: 600px) { 
+  p{
+    font-size: 20px;
+  }
   .cv-text{
-    width: 95%;
+    font-size: 20px;
+    width: 100%;
   }
   .header, footer{
     min-height: 90vh;

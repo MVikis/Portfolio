@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 
 export default function Header(props){
-    const texts =['React Utvecklare','C# Utvecklare','Javascript Utvecklare']
+    const texts =['React utvecklare','C# utvecklare','Javascript utvecklare']
     const [count, setCount] =useState(0)
     const [index, setIndex] = useState(0)
     const [currentText, setText] = useState(texts[0])
