@@ -8,14 +8,15 @@ html {
  scroll-behavior: smooth;
 }
 .text-style{
-  font-size: 10vw;
+  font-size: 80px;
   font-weight: 800;
   font-style: italic;
 }
 .cv-text{
+  
   font-weight: 200;
-  width: 60%;
-  font-size: calc(8px + 2vmin);
+  position: relative;
+  font-size: 17px;
 }
 .App-header {
  background-color: var(--secondary-color);
@@ -27,15 +28,19 @@ html {
   
 }
 nav{
-  font-size: calc(12px + 2vmin);
-  background-color: #373d47;
+  filter: grayscale(100%);
+  font-size: 22px;
+  background-color: #282c34;
   z-index: 3;
   position: fixed;
-  top:0;
+  top: 0;
+  display: flex;
   width: 100%;
+  justify-content: center;
  
 }
 ul{
+  max-width: 1000px;
   width: 100%;
   padding:0;
   margin:0;
@@ -79,7 +84,15 @@ li:hover svg{
   margin-bottom: 50px;
 }
 
-
+#cv, #contact, #gallery{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 :root{
   --primary-color:#69C9D0;
   --secondary-color:#EE1D52;
@@ -94,6 +107,7 @@ li:hover svg{
   justify-content: space-around;
 }
 .row-column{
+  padding:  10px;
   display: flex;
     align-items: center;
     flex-direction: column;
@@ -176,18 +190,14 @@ border-color: var(--primary-color);
   animation:0.5s blink infinite ease;
 }
 .background{
-  min-height: 100vh;
-  position: relative;
-  background-color: var(--secondary-color);
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
+    max-width: 1000px;
+  position: relative;
+  width: 100%;
 }
 .background>div{
-  z-index: 2;
-  padding:10%;
+  position: relative;
 }
 
 .cv-image{
@@ -202,8 +212,8 @@ border-color: var(--primary-color);
 
 .title{
   position: absolute;
-    left: -1vw;
-    top:-8vw;
+    left: 0;
+    top:-100px;
 }
 /* .title:after{
   content:"";
@@ -233,7 +243,7 @@ li>a, .btn-primary{
   z-index: 1;
   width: auto;
   height: auto;
-  font-size: calc(10px + 2vmin);
+  font-size:22px;
   position: relative;
   cursor: pointer;
   min-width: 200px;
@@ -288,6 +298,7 @@ li>a, .btn-primary{
 }
 
 .projects{
+  padding: 10px;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
@@ -452,11 +463,9 @@ right: 3px;
   }
 }
 @media (max-width: 600px) { 
-  p{
-    font-size: 20px;
-  }
+  
   .cv-text{
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
   }
   .header, footer{
@@ -471,11 +480,9 @@ right: 3px;
   #text-effect{
     font-size: 10vw;
   }
-  .text-style{
-    font-size: 20vw;
-  }
+
   #gallery{
-    padding-top: 20px;
+    padding-top: 80px;
     padding-bottom: 20px;
 
   }

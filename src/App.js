@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar/>
-     <Header testCV={testCV} cvImage={cvImage}/>
+      <Header testCV={testCV} cvImage={cvImage}/>
       <CvPage cv={CV} cvImage={cvImage}/>
       <Gallery projects={projects}/>
       <Contact />
