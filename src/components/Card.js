@@ -19,8 +19,12 @@ export default function Card(props){
         
         </div>
         <div className="row button-container">
-        <Button Link={props.project.linkWeb} text="Hemsida"/>
-        <Button Link={props.project.linkGit} text="Github"/>
+        {props.project.linkWeb&&(
+             <Button Link={props.project.linkWeb} text="Hemsida"/>
+        )}
+       {props.project.linkGit&&(
+           <Button Link={props.project.linkGit} text="Github"/>
+       )} 
         </div>
         </div>
     </div>
